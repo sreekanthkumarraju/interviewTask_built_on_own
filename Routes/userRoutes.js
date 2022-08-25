@@ -27,8 +27,14 @@ router.post('/Addusers',async(req,res)=>{
    }
 })
 
-router.get('/login',async(req,res)=>{
-    res.send('hello')
+router.post('/login',async(req,res)=>{
+
+    let user=await userModel.findOne({UserName:req.body.UserName})
+
+    if(user)
+      {
+         res
+      }
 })
 
 module.exports={router}

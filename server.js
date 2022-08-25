@@ -5,7 +5,7 @@ const app=express()
 const {router}=require('./Routes/userRoutes')
 
 app.use(bodyParser.json())
-app.use('/', router)
+app.use('/',router)
 
 const url='mongodb+srv://sreekanth:Fx47jN1EOMlYk91K@cluster0.vok4hmz.mongodb.net/?retryWrites=true&w=majority'
  
